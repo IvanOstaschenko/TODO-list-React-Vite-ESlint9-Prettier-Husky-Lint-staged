@@ -17,8 +17,13 @@ export default function Task({ task, editTodo, deleteTodo }) {
           }}
         />
         <label htmlFor={task.id}>
-          <span className="description">{task.value}</span>
-          <span className="created">
+          <span className="title">{task.value}</span>
+          <span className="description">
+            <button className="icon icon-play"></button>
+            <button className="icon icon-pause"></button>
+            12:25
+          </span>
+          <span className="description">
             {'created ' +
               formatDistanceToNow(task.createDate, { includeSeconds: true, addSuffix: true })}
           </span>

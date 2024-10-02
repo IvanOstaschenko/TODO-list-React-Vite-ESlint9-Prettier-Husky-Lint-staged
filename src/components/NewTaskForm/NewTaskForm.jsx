@@ -30,6 +30,9 @@ export default function NewTaskForm({ addTodo }) {
         placeholder="What needs to be done?"
         value={inputValue}
       />
+      <input className="new-todo-form__timer" placeholder="Min" />
+      <input className="new-todo-form__timer" placeholder="Sec" />
+      <button style={{ display: 'none' }}>submit</button>
     </form>
   );
 }
